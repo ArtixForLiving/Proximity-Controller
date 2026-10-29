@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    strings.xml — ProximityController
+    English-only as per english-code-standard skill requirement.
+    No i18n translation files created (not requested).
+-->
+<resources>
+    <!-- App identity -->
+    <string name="app_name">Proximity Controller</string>
+    <string name="service_label">Proximity Controller Service</string>
+    <string name="admin_label">Proximity Controller Admin</string>
+    <string name="admin_description">Allows the app to lock the screen when the proximity sensor is covered.</string>
+
+    <!-- Main UI labels -->
+    <string name="label_service_enabled">Service enabled</string>
+    <string name="label_section_task">Proximity sensor task</string>
+
+    <!-- Task options -->
+    <string name="option_screen_on">Screen On — wake screen when hand approaches</string>
+    <string name="option_screen_off">Screen Off — lock screen when sensor is covered</string>
+    <string name="option_screen_both">Screen On &amp; Off — combine both tasks</string>
+
+    <!-- Info note -->
+    <string name="info_admin_required">ⓘ  Screen Off and Screen On &amp; Off require Device Admin permission. You will be prompted when enabling the service.</string>
+</resources>

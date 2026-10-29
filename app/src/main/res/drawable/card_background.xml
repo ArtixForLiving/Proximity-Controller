@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    card_background.xml — rounded rectangle card drawable
+    Matches design system: Card #1B2336, border #475569, radius 12dp.
+    Zero runtime overhead — pure XML shape, no bitmap decoding.
+-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <solid android:color="@color/color_card" />
+
+    <corners android:radius="@dimen/card_radius" />
+
+    <stroke
+        android:width="1dp"
+        android:color="@color/color_border" />
+
+</shape>

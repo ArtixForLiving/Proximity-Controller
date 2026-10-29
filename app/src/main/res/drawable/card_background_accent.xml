@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    card_background_accent.xml — info card with subtle green left border.
+    Used for the Device Admin info notice at the bottom of the screen.
+-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base card fill -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/color_card" />
+            <corners android:radius="@dimen/card_radius" />
+            <stroke
+                android:width="1dp"
+                android:color="@color/color_border" />
+        </shape>
+    </item>
+
+    <!-- Left accent stripe (green, 3dp) -->
+    <item android:right="0dp" android:top="0dp" android:bottom="0dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/color_accent" />
+            <corners
+                android:topLeftRadius="@dimen/card_radius"
+                android:bottomLeftRadius="@dimen/card_radius"
+                android:topRightRadius="0dp"
+                android:bottomRightRadius="0dp" />
+            <size android:width="3dp" />
+        </shape>
+    </item>
+
+</layer-list>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ic_launcher.xml — minimal vector launcher icon
+    Sensor wave rings on dark background.
+    Pure XML — zero PNG bitmap cost, scales perfectly.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Background circle (dark navy) -->
+    <path
+        android:fillColor="#1B2336"
+        android:pathData="M0,0 L108,0 L108,108 L0,108 Z" />
+
+    <!-- Outer ring arc (green, thin) -->
+    <path
+        android:strokeColor="#22C55E"
+        android:strokeWidth="3"
+        android:fillColor="@android:color/transparent"
+        android:pathData="M24,54 A30,30 0 0,1 84,54" />
+
+    <!-- Middle ring arc -->
+    <path
+        android:strokeColor="#22C55E"
+        android:strokeWidth="2.5"
+        android:strokeAlpha="0.7"
+        android:fillColor="@android:color/transparent"
+        android:pathData="M33,54 A21,21 0 0,1 75,54" />
+
+    <!-- Inner ring arc -->
+    <path
+        android:strokeColor="#22C55E"
+        android:strokeWidth="2"
+        android:strokeAlpha="0.45"
+        android:fillColor="@android:color/transparent"
+        android:pathData="M42,54 A12,12 0 0,1 66,54" />
+
+    <!-- Center dot -->
+    <path
+        android:fillColor="#22C55E"
+        android:pathData="M54,54 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0" />
+
+</vector>

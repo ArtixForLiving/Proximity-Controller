@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    styles.xml — ProximityController
+    Minimal theme: no ActionBar, dark background, dark status bar.
+    Uses Android framework theme attributes only — no support library.
+-->
+<resources>
+
+    <!-- Base application theme: no title bar, dark system chrome -->
+    <style name="AppTheme" parent="android:Theme.Material.NoActionBar">
+        <!-- Background window color -->
+        <item name="android:windowBackground">@color/color_background</item>
+        <!-- Status bar color (API 21+) -->
+        <item name="android:statusBarColor">@color/color_status_bar</item>
+        <!-- Navigation bar color (API 21+) -->
+        <item name="android:navigationBarColor">@color/color_background</item>
+        <!-- Status bar icons — use light icons on dark background -->
+        <item name="android:windowLightStatusBar">false</item>
+        <!-- Disable window animation for instant transitions (saves GPU) -->
+        <item name="android:windowAnimationStyle">@null</item>
+        <!-- Disable ripple overdraw (minimal GPU cost on Redmi 2) -->
+        <item name="android:colorControlHighlight">#1AFFFFFF</item>
+    </style>
+
+</resources>

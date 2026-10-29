@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    activity_main.xml — ProximityController
+    Design System: Minimalism & Swiss — Dark, Dense (density 8/10)
+    Colors derived from ui-ux-pro-max design system search:
+      Background : #0F172A  Card      : #1B2336
+      Primary    : #1E293B  Accent    : #22C55E
+      Foreground : #F8FAFC  Muted     : #94A3B8
+      Border     : #475569
+-->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/screen_padding">
+
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <!-- HEADER BAR                                                      -->
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <TextView
+            android:id="@+id/text_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_lg"
+            android:text="@string/app_name"
+            android:textColor="@color/color_foreground"
+            android:textSize="@dimen/text_header"
+            android:textStyle="bold"
+            android:letterSpacing="-0.02"
+            android:fontFamily="sans-serif-medium" />
+
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <!-- CARD: Service Toggle                                            -->
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_md"
+            android:background="@drawable/card_background"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/card_padding_h"
+            android:paddingEnd="@dimen/card_padding_h"
+            android:paddingTop="@dimen/card_padding_v"
+            android:paddingBottom="@dimen/card_padding_v">
+
+            <!-- Row: label + switch -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/row_height"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_service_enabled"
+                        android:textColor="@color/color_foreground"
+                        android:textSize="@dimen/text_body"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="○ Stopped"
+                        android:textColor="@color/color_muted"
+                        android:textSize="@dimen/text_caption" />
+
+                </LinearLayout>
+
+                <Switch
+                    android:id="@+id/switch_service"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:thumbTint="@color/color_accent"
+                    android:trackTint="@color/color_switch_track"
+                    android:checked="false"
+                    android:contentDescription="@string/label_service_enabled" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <!-- SECTION HEADER: Proximity Sensor Task                          -->
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_sm"
+            android:layout_marginBottom="@dimen/space_sm"
+            android:text="@string/label_section_task"
+            android:textColor="@color/color_muted"
+            android:textSize="@dimen/text_label"
+            android:textAllCaps="true"
+            android:letterSpacing="0.08"
+            android:textStyle="bold" />
+
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <!-- CARD: Task Selection                                            -->
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_background"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/card_padding_h"
+            android:paddingEnd="@dimen/card_padding_h"
+            android:paddingTop="@dimen/space_xs"
+            android:paddingBottom="@dimen/space_xs">
+
+            <RadioGroup
+                android:id="@+id/radio_group_task"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:checkedButton="@id/radio_screen_on">
+
+                <!-- Option 1: Screen On -->
+                <RadioButton
+                    android:id="@+id/radio_screen_on"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/row_height"
+                    android:gravity="center_vertical"
+                    android:text="@string/option_screen_on"
+                    android:textColor="@color/color_foreground"
+                    android:textSize="@dimen/text_body"
+                    android:buttonTint="@color/color_accent"
+                    android:paddingStart="@dimen/space_sm" />
+
+                <!-- Divider -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/color_border" />
+
+                <!-- Option 2: Screen Off -->
+                <RadioButton
+                    android:id="@+id/radio_screen_off"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/row_height"
+                    android:gravity="center_vertical"
+                    android:text="@string/option_screen_off"
+                    android:textColor="@color/color_foreground"
+                    android:textSize="@dimen/text_body"
+                    android:buttonTint="@color/color_accent"
+                    android:paddingStart="@dimen/space_sm" />
+
+                <!-- Divider -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/color_border" />
+
+                <!-- Option 3: Screen On & Off -->
+                <RadioButton
+                    android:id="@+id/radio_screen_both"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/row_height"
+                    android:gravity="center_vertical"
+                    android:text="@string/option_screen_both"
+                    android:textColor="@color/color_foreground"
+                    android:textSize="@dimen/text_body"
+                    android:buttonTint="@color/color_accent"
+                    android:paddingStart="@dimen/space_sm" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <!-- INFO CARD: Device Admin notice                                  -->
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_md"
+            android:background="@drawable/card_background_accent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/card_padding_h"
+            android:paddingEnd="@dimen/card_padding_h"
+            android:paddingTop="@dimen/space_sm"
+            android:paddingBottom="@dimen/space_sm">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/info_admin_required"
+                android:textColor="@color/color_muted"
+                android:textSize="@dimen/text_caption"
+                android:lineSpacingExtra="3dp" />
+
+        </LinearLayout>
+
+        <!-- Bottom spacer -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_lg" />
+
+    </LinearLayout>
+
+</ScrollView>

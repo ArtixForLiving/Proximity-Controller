@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Device Admin policy declaration.
+    Grants this app the ability to call DevicePolicyManager.lockNow()
+    for the "Screen Off" proximity task.
+    Required permission: BIND_DEVICE_ADMIN.
+-->
+<device-admin>
+    <uses-policies>
+        <!-- Allows calling lockNow() to turn off the screen -->
+        <force-lock />
+    </uses-policies>
+</device-admin>

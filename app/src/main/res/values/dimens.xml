@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    dimens.xml — ProximityController
+    Dense spacing scale (density 8/10 from ui-ux-pro-max search).
+    Spacing tokens: 4 / 8 / 12 / 16 / 24 dp
+-->
+<resources>
+    <!-- Screen outer padding -->
+    <dimen name="screen_padding">16dp</dimen>
+
+    <!-- Card internal padding -->
+    <dimen name="card_padding_h">16dp</dimen>
+    <dimen name="card_padding_v">4dp</dimen>
+
+    <!-- Spacing scale -->
+    <dimen name="space_xs">4dp</dimen>
+    <dimen name="space_sm">8dp</dimen>
+    <dimen name="space_md">12dp</dimen>
+    <dimen name="space_lg">24dp</dimen>
+
+    <!-- List row height — 48dp meets Android touch target minimum (44×44) -->
+    <dimen name="row_height">52dp</dimen>
+
+    <!-- Card corner radius -->
+    <dimen name="card_radius">12dp</dimen>
+
+    <!-- Text sizes -->
+    <dimen name="text_header">22sp</dimen>
+    <dimen name="text_body">15sp</dimen>
+    <dimen name="text_label">11sp</dimen>
+    <dimen name="text_caption">12sp</dimen>
+</resources>

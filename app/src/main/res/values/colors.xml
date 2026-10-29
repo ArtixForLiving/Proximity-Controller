@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    colors.xml — ProximityController
+    Derived from ui-ux-pro-max design system: Minimalism & Swiss, Dark mode.
+    All hex values are exact output from the design system search tool.
+-->
+<resources>
+    <!-- ─── Background surfaces ──────────────────────────────────────── -->
+    <color name="color_background">#0F172A</color>
+    <color name="color_card">#1B2336</color>
+    <color name="color_primary">#1E293B</color>
+    <color name="color_secondary">#334155</color>
+    <color name="color_muted">#272F42</color>
+
+    <!-- ─── Foreground / text ─────────────────────────────────────────── -->
+    <color name="color_foreground">#F8FAFC</color>
+    <color name="color_muted_text">#94A3B8</color>
+
+    <!-- ─── Accent (green — used for Switch thumb, RadioButton tint) ──── -->
+    <color name="color_accent">#22C55E</color>
+    <color name="color_on_accent">#0F172A</color>
+
+    <!-- ─── Borders / dividers ───────────────────────────────────────── -->
+    <color name="color_border">#475569</color>
+
+    <!-- ─── Switch track (semi-transparent dark when unchecked) ──────── -->
+    <color name="color_switch_track">#33475569</color>
+
+    <!-- ─── Info card accent strip ───────────────────────────────────── -->
+    <color name="color_card_accent_border">#22C55E33</color>
+
+    <!-- ─── Status bar (matches background) ──────────────────────────── -->
+    <color name="color_status_bar">#0F172A</color>
+</resources>
