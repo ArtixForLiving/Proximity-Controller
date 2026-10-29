@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/ArtixForLiving/Poximity-Controller/releases/latest">Download APK (v1.0)</a> •
+  <a href="https://github.com/ArtixForLiving/Proximity-Controller/releases/latest">Download APK (v1.0)</a> •
   <a href="#-architecture--engineering">Architecture</a> •
   <a href="#-benchmarks--ram-comparison">Benchmarks</a> •
   <a href="#-features">Features</a> •
@@ -125,7 +125,7 @@ flowchart TD
 
 To ensure persistent 24/7 background operation on custom ROMs:
 
-1. **Install APK**: Download [`ProximityController-v1.0.apk`](https://github.com/ArtixForLiving/Poximity-Controller/releases/download/v1.0/ProximityController-v1.0.apk) and install via your file manager.
+1. **Install APK**: Download [`ProximityController-v1.0.apk`](https://github.com/ArtixForLiving/Proximity-Controller/releases/download/v1.0/ProximityController-v1.0.apk) and install via your file manager.
 2. **Grant Device Admin** *(for Screen Off tasks)*:
    - When enabling the service in the app, click **Activate** when prompted by the system.
    - Alternatively, navigate to: `Settings` → `Security` → `Device Administrators` → Enable **Proximity Controller**.
@@ -144,8 +144,8 @@ To ensure persistent 24/7 background operation on custom ROMs:
 ### Build Steps
 ```bash
 # Clone the repository
-git clone https://github.com/ArtixForLiving/Poximity-Controller.git
-cd Poximity-Controller
+git clone https://github.com/ArtixForLiving/Proximity-Controller.git
+cd Proximity-Controller
 
 # Build Debug APK with R8 Shrinking & Minification
 ./gradlew assembleDebug
